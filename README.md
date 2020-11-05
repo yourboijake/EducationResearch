@@ -23,3 +23,14 @@ Several conclusions can be derived from these analyses:
 * Because student outcomes tend to have only a weak relationship with spending, increased spending is unlikely to be the optimal policy for improving student performance
 
 For all the details regarding the code behind this project, see the script.r file, and for the data visualizations referenced in this summary, see the figures folder.
+## Figures Legend:
+* Fig1: Histogram of spending per student
+* Fig2: Box and Whisker Plot of student test performance across 4th-8th grade, Math-Reading categories
+* Fig3: 4th Grade reading histogram
+* Fig4: 4th Grade math histogram
+* Fig5: 8th Grade math histogram
+* Fig6: 8th Grade reading histogram
+* Fig7: Linear regression/scatterplot 4th Grade math
+* Fig8: Linear regression/scatterplot 4th Grade reading
+* Fig9: Linear regression/scatterplot 8th grade math
+* Fig10: Linear regression/scatterplot 8th grade reading
