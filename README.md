@@ -12,8 +12,8 @@ This yielded the dataset that I used for the hypothesis testing and linear regre
 To evaluate whether or not increased spending improves student test performance, I began by asking a simpler question: do schools with higher spending per student outperform schools with lower spending per student? To answer this question, I split the dataset into two subgroups: observations with spending levels below the mean, and observations with spending levels above the mean, then tested the hypothesis that those above the mean have better test outcomes across the following four categories: 4th Grade reading scores, 4th Grade math scores, 8th Grade reading scores, and 8th Grade math scores. 
 In each of these tests, the higher-spending schools had better test scores than lower spending scores, with p values well below the threshold of 0.05.
 
-To move on to the more complicated question of what role spending plays in determining student outcomes, I ran several linear regressions, using spending as an independent variable and test scores as a dependent variable. Each regression shows a very modest positive coefficient for
-
+To move on to the more complicated question of what role spending plays in determining student outcomes, I ran several linear regressions, using spending as an independent variable and test scores as a dependent variable. Each regression shows a very modest positive coefficient, but a low R^2 (close to 0), indicating that the relationship between spending and student performance is weak.
+For more details regarding these regressions, see figures 7-10.
 
 ## Conclusions:
 Several conclusions can be derived from these analyses:
@@ -21,3 +21,5 @@ Several conclusions can be derived from these analyses:
 * The relationship between spending and performance follows a concave parabola, meaning that moderately high spending schools outperform both low spending and very high spending schools
 * School spending accounts for very little of the variance in student outcomes
 * Because student outcomes tend to have only a weak relationship with spending, increased spending is unlikely to be the optimal policy for improving student performance
+
+For all the details regarding the code behind this project, see the script.r file, and for the data visualizations referenced in this summary, see the figures folder.
