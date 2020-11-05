@@ -43,10 +43,11 @@ data <- mutate(data, lnMA4 = log(AVG_MATH_4_SCORE), lnMA8 = log(AVG_MATH_8_SCORE
                lnSPEND = log(SPEND_PerStud))
 
 #use scatterplot to visualize relationship
-ggplot(data = data) + geom_jitter(mapping = aes(x = SPEND_PerStud, y = AVG_MATH_4_SCORE))
-ggplot(data = data) + geom_jitter(mapping = aes(x = SPEND_PerStud, y = AVG_MATH_8_SCORE))
-ggplot(data = data) + geom_jitter(mapping = aes(x = SPEND_PerStud, y = AVG_READING_4_SCORE))
-ggplot(data = data) + geom_jitter(mapping = aes(x = SPEND_PerStud, y = AVG_READING_8_SCORE))
+ggplot(data = data, aes(x = SPEND_PerStud, y = AVG_MATH_4_SCORE)) + geom_jitter() + geom_smooth(method="lm", se=FALSE, size=1.5)
+ggplot(data = data, aes(x = SPEND_PerStud, y = AVG_MATH_8_SCORE)) + geom_jitter() + geom_smooth(method="lm", se=FALSE, size=1.5)
+ggplot(data = data, aes(x = SPEND_PerStud, y = AVG_READING_4_SCORE)) + geom_jitter() + geom_smooth(method="lm", se=FALSE, size=1.5)
+ggplot(data = data, aes(x = SPEND_PerStud, y = AVG_READING_8_SCORE)) + geom_jitter() + geom_smooth(method="lm", se=FALSE, size=1.5)
+
 
 #regression analysis to explore relationship between spending and test scores
 lmodel <- lm(data[["AVG_MATH_4_SCORE"]] ~ data[["SPEND_PerStud"]])
